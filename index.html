@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Simples</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Dashboard Simples</h1>
+  <div class="dashboard">
+
+    <div class="cards">
+      <div class="card">
+        <div>Usuários ativos</div>
+        <h2 id="usuarios">1200</h2>
+      </div>
+      <div class="card">
+        <div>Vendas hoje</div>
+        <h2 id="vendas">R$ 1.500</h2>
+      </div>
+      <div class="card">
+        <div>Pedidos pendentes</div>
+        <h2 id="pedidos">15</h2>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="vendasChart"></canvas>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Produto</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="pedidosTable">
+        <tr><td>João</td><td>Camiseta</td><td>Enviado</td></tr>
+        <tr><td>Ana</td><td>Caneca</td><td>Pendente</td></tr>
+        <tr><td>Maria</td><td>Livro</td><td>Entregue</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
